@@ -19,7 +19,7 @@ body{
     display: flex;
     flex-direction: column;
     gap: 24px;
-    max-width: 327px;
+    max-width: 280px;
     height: fit-content;
     background-color: hsl(0, 0%, 100%);
     border: 1px solid hsl(0, 0%, 7%);
@@ -28,9 +28,9 @@ body{
     box-shadow: 8px 8px 0px 0px #000;
 }
 img{
-    max-width: 100%;
-    height: auto;
-    border-radius: 16px;
+    max-width: auto;
+    height: 200px;
+    border-radius: 10px;
 }
 .text-div{
     display: flex;
@@ -63,6 +63,10 @@ img{
     align-items: center;
     justify-content: flex-start;
 }
+.avatar-div img{
+   height: 32px;
+   weight: 32px;
+}
 h1, h2{
     font-weight: 800;
     font-size: 22px;
@@ -76,5 +80,11 @@ p{
 @media only screen and (min-width: 375px) {
     .container{
         padding: 24px;
+        max-width: 327px;
+    }
+}
+@media only screen and (min-width: 768px) {
+    .container{
+        max-width: 384px;
     }
 }
